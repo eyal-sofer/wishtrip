@@ -1,0 +1,9 @@
+version: 0.2
+2	phases:
+3	  install:
+4	    runtime-versions:
+5	      python: 3.8
+6	  pre_build:
+7	    commands:
+8	      - pip install -r requirements.txt
+9	      - python app_test.py
